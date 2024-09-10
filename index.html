@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    
+    <!-- Player Info Section -->
+    <div id="player-info">
+        <label for="player1">Player 1 (X) Name:</label>
+        <input type="text" id="player1" placeholder="Enter Player 1 Name" required>
+        <label for="player2">Player 2 (O) Name or 'Computer':</label>
+        <input type="text" id="player2" placeholder="Enter Player 2 Name or 'Computer'" required>
+        <button id="start-game">Start Game</button>
+    </div>
+
+    <!-- Game Board Section -->
+    <div id="game-board" style="display:none;">
+        <div class="row">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <div class="row">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <div class="row">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+    </div>
+
+    <!-- Game Status Section -->
+    <div id="status"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
